@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --pink: hsl(322, 100%, 66%);
+    --pale-cyan: hsl(193, 100%, 96%);
+    --dark-cyan: hsl(192, 100%, 9%);
+     --Blue: hsl(208, 11%, 55%);
+    
+    --poppins: 'Poppins', sans-serif; 
+    --open-sans: 'Open Sans', sans-serif;
+
+    --padding-conteiner: 60px 0; 
+}
+
+ .conteiner {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-conteiner);
+ }
+  
+ .hero {
+    min-height: 100vh;
+    position: relative;
+    background-image: url(images/bg-hero-mobile.svg);
+ }
+
+.hero_nav{
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    --padding-conteiner: 40px 0 45px; 
+
+}
+
+.hero_logo {
+      width: 45%;
+     max-width: 160px;
+}
+
+.hero_huddle {
+    width: 100%;
+    display: block;
+
+}
+
+.hero_nav-cta {    
+    text-align: center;
+    font-family: var(--open-sans);
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--dark-cyan);
+    padding: 5px 30px;
+    border-radius: 35px;
+    box-shadow: 2px 2px 2px 2px #eeddee;
+    background-color: white ;
+    margin-right: 5px;
+
+}
+
+.hero_section {
+    padding-top: 20px;
+    text-align: center;
+}
+.hero_title {
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: var(--poppins);
+    color: var(--dark-cyan);
+}
+
+.hero_text {
+    text-align: center;
+    margin: 0 auto ;
+    width: 90%;
+    font-family: var(--open-sans);
+    font-weight: 400 ;
+    line-height: 1.5;
+    color: var(--dark-cyan);
+    
+
+}
+
+.hero_section-cta {
+
+    width: 70%;
+    padding: 10px ;
+    border-radius: 35px;
+    background-color: var(--pink);
+    margin: 15px auto;
+    text-decoration: none;
+    font-family: var(--open-sans);
+    font-weight: 700;
+    color: white; 
+    display: inline-block;
+  
+}
+
+.hero_section-img {
+    display: inline-block;
+    width: 90%;
+    max-width: 1200px;
+    margin: 10px 0;
+}
+
+.hero_mockup {
+    width: 100%;
+}
+
+.main {
+}
+.section {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px #eeddee;
+    margin-top: 50px  ;
+}
+
+.section_img {
+    width: 80%;
+}
+
+.section_title {
+    font-family: var(--poppins);
+}
+
+.section_p {
+    font-family: var(--open-sans);
+    font-weight: 400;
+   color: var(--Blue);
+   width: 80%;
+   max-width: 300px;
+   margin: 0 auto;    
+}
+
+.question {
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px #eeddee;
+    --padding-conteiner: 20px 10px ;
+    margin: 60px auto 0 auto ;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.question_text {
+    font-family: var(--poppins);
+    
+
+}
+
+.question_cta {
+    width: 70%;
+    max-width: 300px;
+    padding: 10px ;
+    border-radius: 35px;
+    background-color: var(--pink);
+    margin: 15px auto;
+    text-decoration: none;
+    font-family: var(--open-sans);
+    font-weight: 700;
+    color: white; 
+    display: inline-block;
+
+}
