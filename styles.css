@@ -12,7 +12,7 @@
     --poppins: 'Poppins', sans-serif; 
     --open-sans: 'Open Sans', sans-serif;
 
-    --padding-conteiner: 60px 0; 
+    --padding-conteiner: 40px 0; 
 }
 
  .conteiner {
@@ -27,6 +27,7 @@
     min-height: 100vh;
     position: relative;
     background-image: url(images/bg-hero-mobile.svg);
+
  }
 
 .hero_nav{
@@ -66,6 +67,8 @@
 .hero_section {
     padding-top: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 .hero_title {
     text-align: center;
@@ -112,8 +115,9 @@
     width: 100%;
 }
 
-.main {
-}
+/*.main {
+    
+} */
 .section {
     width: 90%;
     display: flex;
@@ -151,6 +155,12 @@
     margin: 60px auto 0 auto ;
     width: 80%;
     max-width: 1200px;
+    margin-bottom: -40px;
+    position: relative;
+    z-index: 100;
+    background-color: white;
+
+
 }
 
 .question_text {
@@ -165,11 +175,107 @@
     padding: 10px ;
     border-radius: 35px;
     background-color: var(--pink);
-    margin: 15px auto;
     text-decoration: none;
     font-family: var(--open-sans);
     font-weight: 700;
     color: white; 
+    margin: 10px auto;
     display: inline-block;
+}
 
+.footer {
+    background-color: var(--dark-cyan);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.info_logo {
+    width: 50%;
+    padding: 10px;
+
+}
+  
+.info img{  
+    padding-right: 15px;
+}
+
+.info p{
+    font-family: var(--open-sans);
+    font-weight: 400px;
+    padding: 10px;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0 ;
+
+}
+
+.info_link {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px ;
+    font-family: var(--open-sans)
+    
+}
+
+.social_media {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.facebook, .instagram, .twitter {
+    padding: 10px;
+
+}
+
+.copyright {
+    text-align: center;
+    font-size: small;
+   font-family: var(--open-sans);
+}
+
+@media screen and (min-width: 700px) {
+     
+    .hero_section {
+        flex-direction: row;
+        width: 100%;
+    }
+   
+    .hero_cta {
+        margin: 0;
+        padding: 0;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+   .hero_section-img{
+    width: 60%;
+    margin: 0 auto;
+   }
+   .hero_mockup {
+    width: 100%;
+    
+   }
+    
+   .section {
+    display: flex;
+    flex-direction: row-reverse;
+   }
+   
+   .section_img {
+    margin: 0 auto;
+    width: 50%;
+   }
+   
 }
